@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@ngscaffolding/models": {
+      "projectType": "library",
+      "root": "projects/ngscaffolding/models",
+      "sourceRoot": "projects/ngscaffolding/models/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngscaffolding/models/tsconfig.lib.json",
+            "project": "projects/ngscaffolding/models/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngscaffolding/models/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngscaffolding/models/src/test.ts",
+            "tsConfig": "projects/ngscaffolding/models/tsconfig.spec.json",
+            "karmaConfig": "projects/ngscaffolding/models/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngscaffolding/models/tsconfig.lib.json",
+              "projects/ngscaffolding/models/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": false
+  },
+  "defaultProject": "@ngscaffolding/models"
+}
