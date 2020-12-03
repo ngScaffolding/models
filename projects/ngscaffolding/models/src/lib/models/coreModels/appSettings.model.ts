@@ -34,6 +34,9 @@ export enum AppSettings {
     authPasswordSpecial = 'authPasswordSpecial',
     authRequiredRole = 'authRequiredRole',
 
+    // OAuth Settings block
+    authOAuthSettings = 'authOAuthSettings',
+
     // Screen Furniture
     showFooter = 'showFooter',
     showTopNotifications = 'showTopNotifications',

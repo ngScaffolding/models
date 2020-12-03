@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --project=@ngscaffolding/models",
+    "build:watch": "ng build --project=@ngscaffolding/models --watch",
     "test": "ng test",
     "lint": "ng lint"
   },
