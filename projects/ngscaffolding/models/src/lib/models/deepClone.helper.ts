@@ -2,6 +2,10 @@ export class DeepCloneHelper {
     public static getDeepCopy(obj) {
         let copy;
 
+        // Call to string here to remove immutability
+        if(obj instanceof String){
+            return obj.toString();
+        }
         // Handle the 3 simple types, and null or undefined
         // tslint:disable-next-line: triple-equals
         if (null == obj || 'object' != typeof obj) {
