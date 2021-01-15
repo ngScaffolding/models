@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-    "peerDependencies": {
+  "peerDependencies": {
     "@angular/animations": "~11.0.1",
     "@angular/common": "~11.0.1",
     "@angular/compiler": "~11.0.1",
