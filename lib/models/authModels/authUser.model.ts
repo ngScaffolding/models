@@ -1,5 +1,5 @@
 export interface BasicUser {
-    userId: string;
+    userId?: string;
 
     // Only used in creation screen
     modelUserId?: string;

@@ -16,6 +16,6 @@ export interface UserPreferenceDefinition extends BaseEntity {
 }
 
 export interface UserPreferenceValue extends BaseEntity {
-  userId: string;
-  value: string;
+  userId?: string;
+  value?: string;
 }

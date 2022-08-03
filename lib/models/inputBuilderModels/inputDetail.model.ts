@@ -118,6 +118,9 @@ export interface InputDetailDropdown extends InputDetailReferenceValues {
 }
 
 export interface InputDetailToggleButton extends InputDetail {}
+export interface InputDetailMultipleScan extends InputDetail {
+    expectedCount: number;
+}
 export interface InputDetailTextArea extends InputDetail {
     rows?: number; // Rows for TextArea
 }

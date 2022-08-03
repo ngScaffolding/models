@@ -3,6 +3,9 @@
   "version": "2.0.200",
   "main": "dist/public-api.js",
   "types": "dist/public-api.d.ts",
+  "scripts": {
+    "dev": "tsc -w"
+  },
   "files": [
     "/dist"
   ]
