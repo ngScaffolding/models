@@ -95,6 +95,9 @@ export enum AppSettings {
     mobileCacheNames = 'mobileCacheNames',
     mobileDefaultTimeout = 'mobileDefaultTimeout',
     mobileDefaultRetries = 'mobileDefaultRetries',
-    mobileDefaultPolling = 'mobileDefaultPolling'
+    mobileDefaultPolling = 'mobileDefaultPolling',
+
+    // Stock module settings
+    isStockEnabled = 'isStockEnabled'
 
 }
