@@ -49,6 +49,8 @@ export interface Action extends BaseEntity {
 
   idField?: string;
   idValue?: string;
+  readOnly?: boolean;
+  
   entityType?: string;
   additionalProperties?: any;
   inputBuilderDefinition?: InputBuilderDefinition;
