@@ -105,10 +105,13 @@ export interface InputDetailDateTime extends InputDetail {
 
 export interface InputDetailReferenceValues extends InputDetail {
     referenceValueName?: string; // Used for select items
-    referenceValueSeedName?: string; // set to name, when changed use this value in search
     referenceValueChildLevel?: number; // Where the Reference data contains children, which level down do we go
     datasourceItems?: Array<ReferenceValueItem>; // Results of the datasource stored here for binding
     referenceValueSeedDependency?: string; // Name of control to use as seed for this DataSource... Used linked Dropdowns
+    referenceValueSeedValue?: any; // Set to a specific value used in search
+    referenceValueSeedName?: string; // set to name, when changed use this value in search
+    
+    returnsObject?: boolean; // When set the full ReferenceValueItem object is returned
 }
 
 export interface InputDetailDropdown extends InputDetailReferenceValues {
