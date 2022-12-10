@@ -31,6 +31,7 @@ export interface ReferenceValue extends BaseEntity {
   meta2Property?: string;
   meta3Property?: string;
   rolesProperty?: string;
+  includeNoneOption?: boolean;
 }
 
 export interface ReferenceValueItem {
