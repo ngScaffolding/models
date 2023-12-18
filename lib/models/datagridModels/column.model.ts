@@ -35,4 +35,6 @@ export interface ColumnModel extends BaseEntity {
     // glyph count column
     icon?: string;
     toolText?: string;
+
+    groupingOrder?: number;
 }
