@@ -1,6 +1,6 @@
 {
   "name": "@ngscaffolding/models",
-  "version": "2.0.305",
+  "version": "2.0.306",
   "main": "dist/public-api.js",
   "types": "dist/public-api.d.ts",
   "scripts": {

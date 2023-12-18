@@ -1,21 +1,37 @@
 import { BaseEntity } from '../coreModels/baseEntity.model';
 
 export interface ColumnModel extends BaseEntity {
+        // dateTimeColumn, dateColumn, numericColumn, hyperLink
+        type?: string;
+
     field?: string;
 
     cellClass?: string;
     tooltipField?: string;
     headerName?: string;
+    headerClass?: string;
     headerTooltip?: string;
+    wrapHeaderText?: boolean;
+    autoHeaderHeight?: boolean;
     pinned?: string; // left or right
     suppressMenu?: boolean;
     filter?: boolean;
-    sortable?: boolean;
 
-    // dateTimeColumn, dateColumn, numericColumn, hyperLink
-    type?: string;
+    autoHeight?: boolean;
+    wrapText?: boolean;
+    
+    // sort direction enum
+    sort?: any;
+    sortable?: boolean;
+    sortIndex?: number;
+
+
     hide?: boolean;
     width?: number;
+    minWidth?: number;
+    maxWidth?: number;
+    flex?: number;
+    resizable?: boolean;
 
     // Register the below in gridExtensions Service
     // javascript function to format value display
@@ -36,5 +52,9 @@ export interface ColumnModel extends BaseEntity {
     icon?: string;
     toolText?: string;
 
-    groupingOrder?: number;
+    rowGroup?: boolean;
+    enableRowGroup?: boolean;
+    rowGroupIndex?: number;
+
+    aggFunc?: string;
 }

@@ -51,4 +51,7 @@ export interface DataGridDetail {
     dataValues?: any;
 
     actions?: Array<Action>;
+
+    // Number of group levels to expand
+    groupDefaultExpanded?: number;
 }
