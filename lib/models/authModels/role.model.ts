@@ -6,4 +6,5 @@ export interface Role extends BaseEntity {
 
     // To administer this role you need to belong to this group
     adminRole: string;
+
 }
