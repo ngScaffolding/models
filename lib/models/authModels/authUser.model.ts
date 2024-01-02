@@ -10,6 +10,8 @@ export interface BasicUser {
     language?: string;
 
     role?: string[];
+
+    permissions?: string[];
 }
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions

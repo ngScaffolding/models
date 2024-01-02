@@ -9,6 +9,7 @@ export * from './lib/models/authModels/authUserResponse.model';
 export * from './lib/models/authModels/IClient.model';
 export * from './lib/models/authModels/IUser.model';
 export * from './lib/models/authModels/role.model';
+export * from './lib/models/authModels/permission.model';
 export * from './lib/models/authModels/changePassword.model';
 
 export * from './lib/models/chartModels/chartDetail.model';
