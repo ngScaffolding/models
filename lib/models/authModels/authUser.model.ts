@@ -12,6 +12,9 @@ export interface BasicUser {
     role?: string[];
 
     permissions?: string[];
+
+    accessCode?: string;
+    accessCodeExpires?: Date;
 }
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
