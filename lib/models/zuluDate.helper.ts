@@ -34,11 +34,11 @@ export class ZuluDateHelper {
   public static getSQLDate(inputDate: Date): string {
     if (inputDate) {
       // eslint-disable-next-line max-len
-      return `${inputDate.getUTCFullYear()}-${inputDate.getUTCMonth()}-${inputDate.getUTCDate()} ${inputDate.getUTCHours()}:${inputDate.getUTCMinutes()}:${inputDate.getUTCSeconds()}`;
+      return `${inputDate.getUTCFullYear()}-${inputDate.getUTCMonth()+1}-${inputDate.getUTCDate()} ${inputDate.getUTCHours()}:${inputDate.getUTCMinutes()}:${inputDate.getUTCSeconds()}`;
     } else {
       inputDate = new Date();
       // eslint-disable-next-line max-len
-      return `${inputDate.getUTCFullYear()}-${inputDate.getUTCMonth()}-${inputDate.getUTCDate()} ${inputDate.getUTCHours()}:${inputDate.getUTCMinutes()}:${inputDate.getUTCSeconds()}`;
+      return `${inputDate.getUTCFullYear()}-${inputDate.getUTCMonth()+1}-${inputDate.getUTCDate()} ${inputDate.getUTCHours()}:${inputDate.getUTCMinutes()}:${inputDate.getUTCSeconds()}`;
     }
   }
 
