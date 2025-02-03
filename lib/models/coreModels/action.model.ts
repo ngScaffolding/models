@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-shadow */
+import { BaseDataSource } from '../dataSourceModels/base.dataSource.model';
 import { InputBuilderDefinition } from '../inputBuilderModels/inputBuilderDefinition.model';
 import { BaseEntity } from './baseEntity.model';
 
@@ -50,7 +51,7 @@ export interface Action extends BaseEntity {
   idField?: string;
   idValue?: string;
   readOnly?: boolean;
-  
+
   entityType?: string;
   additionalProperties?: any;
   inputBuilderDefinition?: InputBuilderDefinition;
@@ -67,7 +68,7 @@ export interface Action extends BaseEntity {
 
   // For SQL this contains the SQL Command ID
   dataSourceName?: string;
-
+  dataSource?: BaseDataSource;
   // Angular Controller content
   angularComponent?: string;
   dialogOptions?: DialogOptions;

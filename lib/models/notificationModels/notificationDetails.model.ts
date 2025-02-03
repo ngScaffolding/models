@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
+
+import { BaseDataSource } from "../dataSourceModels/base.dataSource.model";
+
 /* eslint-disable no-shadow */
 export const enum NotificationTypes {
     Email,
@@ -7,14 +10,15 @@ export const enum NotificationTypes {
 }
 
 export interface NotifcationDetails {
-    name: string;
-    message: string;
-    triggerDataSourceName: string;
-    types: NotificationTypes[];
+  name: string;
+  message: string;
+  triggerDataSourceName: string;
+  triggerDataSource?: BaseDataSource;
+  types: NotificationTypes[];
 
-    // Payload
-    data: any;
+  // Payload
+  data: any;
 
-    // Url etc
-    target: string;
+  // Url etc
+  target: string;
 }

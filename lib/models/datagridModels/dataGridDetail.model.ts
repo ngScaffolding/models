@@ -1,6 +1,7 @@
 import { ColumnModel } from './column.model';
 import { InputBuilderDefinition } from '../inputBuilderModels/inputBuilderDefinition.model';
 import { Action } from '../coreModels/action.model';
+import { BaseDataSource } from '../dataSourceModels/base.dataSource.model';
 
 export interface DataGridDetail {
     title?: string;
@@ -46,6 +47,7 @@ export interface DataGridDetail {
 
     // Get data from dataSource
     selectDataSourceName?: string;
+    selectDataSource?: BaseDataSource;
 
     // Or here is the data
     dataValues?: any;

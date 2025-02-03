@@ -84,7 +84,6 @@ export enum AppSettings {
     prefHideTheme = 'prefHideTheme',
 
     apiHome = 'apiHome',
-    apiAuth = 'apiAuth',
     apiServers = 'apiServers',
 
     cacheDefaultSeconds = 'cacheDefaultSeconds',

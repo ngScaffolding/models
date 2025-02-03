@@ -1,3 +1,4 @@
+import { BaseDataSource } from '../dataSourceModels/base.dataSource.model';
 import { BaseEntity } from './baseEntity.model';
 
 export interface ReferenceValue extends BaseEntity {
@@ -21,6 +22,7 @@ export interface ReferenceValue extends BaseEntity {
 
   // Used to populate from dataSource
   dataSourceName?: string;
+  dataSource?: BaseDataSource;
   displayProperty?: string;
   valueProperty?: string;
   itemOrderProperty?: string;

@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable no-shadow */
 import { InputBuilderDefinition } from '../inputBuilderModels/inputBuilderDefinition.model';
+import { BaseDataSource } from '../public-api';
 
 export const enum DataShapes {
     // A|B
@@ -37,6 +38,7 @@ export interface ChartDetailModel {
 
     // datasource to populate Series collection
     dataSourceName?: string;
+    dataSource?: BaseDataSource;
 
     // OR Get the xAxis labels from the data
     labelsInFirstValue?: boolean;

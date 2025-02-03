@@ -46,7 +46,7 @@ export const enum SystemDataSourceNames {
 }
 
 export interface BaseDataSource {
-    name: string;
+    name?: string;
     type: DataSourceTypes;
 
     // Expires in Seconds

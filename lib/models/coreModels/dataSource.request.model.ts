@@ -1,5 +1,8 @@
+import { BaseDataSource } from "../dataSourceModels/base.dataSource.model";
+
 export interface DataSourceRequest {
   name: string | string[];
+  dataSource?: BaseDataSource;
   seed?: string;
   filterValues?: any;
   rowData?: any[];
