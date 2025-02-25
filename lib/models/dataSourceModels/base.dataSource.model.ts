@@ -46,26 +46,31 @@ export const enum SystemDataSourceNames {
 }
 
 export interface BaseDataSource {
-    name?: string;
-    type: DataSourceTypes;
+  name?: string;
+  type: DataSourceTypes;
 
-    // Expires in Seconds
-    expires?: number;
+  // Expires in Seconds
+  expires?: number;
 
-    // Filled by code when retrieved for cache reasons
-    whenStored?: Date;
+  // Filled by code when retrieved for cache reasons
+  whenStored?: Date;
 
-    // timeout in milliseconds
-    timeout?: number;
+  // timeout in milliseconds
+  timeout?: number;
 
-    isPagedData?: boolean;
-    isAudit?: boolean;
+  isPagedData?: boolean;
+  isAudit?: boolean;
 
-    // Name Of DataSource to flush on completed
-    flushReferenceValues?: string;
+  // Name Of DataSource to flush on completed
+  flushReferenceValues?: string;
 
-    parameters?: ParameterDetail[];
-    inputControls?: InputDetail[];
+  parameters?: ParameterDetail[];
+  inputControls?: InputDetail[];
+  inputData?: any;
 
-    itemDetails: RestApiDataSource | SqlDataSource | DocumentDBDataSource | MongoDBDataSource;
+  itemDetails:
+    | RestApiDataSource
+    | SqlDataSource
+    | DocumentDBDataSource
+    | MongoDBDataSource;
 }

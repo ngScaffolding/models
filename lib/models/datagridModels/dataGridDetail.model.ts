@@ -39,7 +39,7 @@ export interface DataGridDetail {
 
     filters?: InputBuilderDefinition;
 
-    // row and cell class rules for conditional formatting
+    // row class rules for conditional formatting
     rowClassRules?: { [cssClassName: string]: string | ((params: any) => boolean) };
 
     // Value passed to datasources

@@ -1,10 +1,11 @@
 {
   "name": "@ngscaffolding/models",
-  "version": "2.0.700",
+  "version": "2.0.900",
   "main": "dist/public-api.js",
   "types": "dist/public-api.d.ts",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "link": "npm link"
   },
   "files": [
     "/dist"
