@@ -31,6 +31,8 @@ export interface DataGridDetail {
     defaultSort?: string;
 
     columns: Array<any>;
+    addAllColumns?: boolean; 
+
     configuredColumns?: Array<any>;
     isActionColumnSplitButton?: any;
     bypassAutoSizeColumns?: boolean;

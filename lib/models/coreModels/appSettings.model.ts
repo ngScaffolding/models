@@ -35,6 +35,10 @@ export enum AppSettings {
     authPasswordNumeric = 'authPasswordNumeric',
     authPasswordSpecial = 'authPasswordSpecial',
     authRequiredRole = 'authRequiredRole',
+    authUseMfa = 'authUseMfa',
+    authUseMfaEmail = 'authUseMfaEmail',
+    authUseMfaMSA = 'authUseMfaMSA',
+    authUseMfaSMS = 'authUseMfaSMS',
 
     // OAuth Settings block
     authOAuthSettings = 'authOAuthSettings',
@@ -58,7 +62,7 @@ export enum AppSettings {
     inputDateTimeFormat = 'inputDateTimeFormat',
     inputDateFormat = 'inputDateFormat',
     inputDateForceUTC = 'inputDateForceUTC',
-    inputDateShowButtonBar= 'inputDateShowButtonBar',
+    inputDateShowButtonBar = 'inputDateShowButtonBar',
 
     // File Uploads
     maximumFileSize = 'maximumFileSize',
@@ -97,6 +101,5 @@ export enum AppSettings {
     mobileDefaultPolling = 'mobileDefaultPolling',
 
     // Stock module settings
-    isStockEnabled = 'isStockEnabled'
-
+    isStockEnabled = 'isStockEnabled',
 }

@@ -118,6 +118,7 @@ export interface InputDetailDropdown extends InputDetailReferenceValues {
     selectFilter?: boolean; // Show Filter on Select Dropdown
     selectFilterBy?: string; // Fields to filter by on Select DropDown
     selectFilterPlaceholder?: string; // Placeholder for Filter input
+    showTooltip?: boolean;
 }
 
 export interface InputDetailToggleButton extends InputDetail {}
